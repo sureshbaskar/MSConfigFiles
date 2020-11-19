@@ -1,0 +1,12 @@
+productms.console.enabled: true
+productms.console.path: /h2
+productms.datasource.url: jdbc:h2:mem:productDb;DB_CLOSE_DELAY=-1
+productms.datasource.username: sa
+productms.datasource.password:
+productms.datasource.driver: org.h2.Driver
+
+
+productms.eureka.url: http://eureka:8761/eureka
+zipkin.url: http://zipkin:9411/
+
+message: From dev profile under product microservice 

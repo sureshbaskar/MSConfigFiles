@@ -1,0 +1,19 @@
+spring:
+  rabbitmq:
+    host: ${eureka.bus.rabbitmq.host:rabbitmq-master}
+    port: ${eureka.bus.rabbitmq.port:5672}
+server:
+  port: ${eureka.server.port:8761}
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${eureka.peer.url}
+  instance:
+    hostname: ${eureka.server.hostname}
+
+eureka.server.management.port: 9000
+eureka.server.logging.level.root: ERROR
+eureka.server.logging.level.web: ERROR
+eureka.server.logging.level.http: ERROR
